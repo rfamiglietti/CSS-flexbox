@@ -60,6 +60,63 @@ hr {
     border-radius: 16px;
 }
 
+.bloco-1-sem-altura{
+    background-color: lightblue;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-2-sem-altura{
+    background-color: lightpink;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-3-sem-altura{
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-1-fontes-diferentes{
+    background-color: lightblue;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-2-fontes-diferentes{
+    background-color: lightpink;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-3-fontes-diferentes{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -105,3 +162,133 @@ hr {
     height: 500px;
 }
 
+.justify-content-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.justify-content-flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.justify-content-flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.justify-content-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.justify-content-space-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.justify-content-space-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.align-items-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.align-items-flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.align-items-flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.align-items-stretch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.flex-wrap-nowrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.flex-wrap-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* indiferente */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
