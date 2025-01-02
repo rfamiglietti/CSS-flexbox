@@ -1,157 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Flexible Box Module, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.">
+    <meta name="author" content="Prof. Anderson Fontes - SENAI - projeto Ford Enter">
+    <meta name="keywords" content="display,flex-direction, justify-content, align-items, flex-wrap, flex-flow,  align-content, senai, ford enter, curso front-end">
     <title>Atividade Flexbox</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="robo.png" type="image/x-icon">       
-
 </head>
 
 <body>
-    <header>
+    <h1 class="titulo-pagina">Propriedades Flexbox - Parte 1: container</h1>
+    <hr>
+
+    <nav class="menu-navegacao">
         <ul>
-            <a href="flex-direction"><li>flex direction</li></a>
-            <a href="flex-direction"><li>justify-content</li></a>
-            <a href="flex-direction"><li>align-items</li></a>
-            <a href="flex-direction"><li>flex-wrap</li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
-            <a href="flex-direction"><li></li></a>
+            <li class="link-menu-principal"><a href="#display">display</a></li>
+            <li class="link-menu-principal"><a href="#flex-direction">flex-direction</a></li>
+            <li class="link-menu-principal"><a href="#justify-content">justify-content</a></li>
+            <li class="link-menu-principal"><a href="#align-items">align-items</a></li>
+            <li class="link-menu-principal"><a href="#flex-wrap">flex-wrap</a></li>
+            <li class="link-menu-principal"><a href="#flex-flow">flex-flow</a></li>
+            <li class="link-menu-principal"><a href="#align-content">align-content</a></li>
         </ul>
-    </header>
-    <h1 class="titulo-pagina">Propriedades Flexbox</h1>
+    </nav>
+
     <hr>
-
-    <h1 class="nome-da-propriedade">1- display: ativa o Flexbox</h1>
-    <h2 class="valor-da-propriedade">display: flex</h2>
+    <h1 class="nome-da-propriedade" id="display"> 1- display: ativa o flexbox / identifica a tag que será o container do
+        flexbox</h1>
     <hr>
-
-    <h1 class="nome-da-propriedade">2- flex-direction: define a direção do eixo principal</h1>
-
+    <h1 class="nome-da-propriedade" id="flex-direction"> 2- flex-direction - define a direção do eixo principal.
+        Exemplos:</h1>
     <h2 class="valor-da-propriedade">flex-direction: row</h2>
     <main class="container-row">
+
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
-    </main>
 
+    </main>
     <h2 class="valor-da-propriedade">flex-direction: column</h2>
     <main class="container-column">
+
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
-    </main>
 
+    </main>
+    <h2 class="valor-da-propriedade">flex-direction: column-reverse</h2>
+    <main class="container-column-reverse">
+
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+
+    </main>
     <h2 class="valor-da-propriedade">flex-direction: row-reverse</h2>
     <main class="container-row-reverse">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
-
-    <h2 class="valor-da-propriedade">flex-direction: column-reverse</h2>
-    <main class="container-column-reverse">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-    </main>
-
-    <h1 class="nome-da-propriedade">3- justify-content: serve para alinhar os objetos</h1>
-
+    <hr>
+    <h1 class="nome-da-propriedade" id="justify-content">3- justify-content: serve para alinhar os objetos no eixo
+        principal
+    </h1>
     <h2 class="valor-da-propriedade">justify-content: center</h2>
-    <main class="justify-content-center">
+    <main class="container-justify-center">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
-    
+
     <h2 class="valor-da-propriedade">justify-content: flex-start</h2>
-    <main class="justify-content-flex-start">
+    <main class="container-justify-flex-start">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
 
     <h2 class="valor-da-propriedade">justify-content: flex-end</h2>
-    <main class="justify-content-flex-end">
+    <main class="container-justify-flex-end">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
 
     <h2 class="valor-da-propriedade">justify-content: space-between</h2>
-    <main class="justify-content-space-between">
+    <main class="container-justify-space-between">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
 
     <h2 class="valor-da-propriedade">justify-content: space-around</h2>
-    <main class="justify-content-space-around">
+    <main class="container-justify-space-around">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
     </main>
 
-    <h2 class="valor-da-propriedade">justify-content: space-evenly</h2>
-    <main class="justify-content-space-evenly">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-    </main>
-
-    <h1 class="nome-da-propriedade">4- align-items: alinhar os elementos no eixo perpendicular</h1>
-
-    <h2 class="valor-da-propriedade">align-items: center</h2>
-    <main class="align-items-center">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-    </main>
-
-    <h2 class="valor-da-propriedade">align-items: flex-start</h2>
-    <main class="align-items-flex-start">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-    </main>
-
-    <h2 class="valor-da-propriedade">align-items: flex-end</h2>
-    <main class="align-items-flex-end">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-    </main>
-
-    <h2 class="valor-da-propriedade">align-items: stretch</h2>
-    <main class="align-items-stretch">
-        <div class="bloco-1-sem-altura"> 1 </div>
-        <div class="bloco-2-sem-altura"> 2 </div>
-        <div class="bloco-3-sem-altura"> 3 </div>
-    </main>
-
-    <h2 class="valor-da-propriedade">align-items: baseline</h2>
-    <main class="align-items-baseline">
-        <div class="bloco-1-fontes-diferentes"> 1 </div>
-        <div class="bloco-2-fontes-diferentes"> 2 </div>
-        <div class="bloco-3-fontes-diferentes"> 3 </div>
-    </main>
 </body>
 
+<h2 class="valor-da-propriedade">justify-content: space-evenly</h2>
+<main class="container-justify-space-evenly">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+</main>
+<hr>
+<h1 class="nome-da-propriedade" id="align-items">4- align-items - alinhar os elementos no eixo perpendicular/secundário
+</h1>
+<h2 class="valor-da-propriedade">align-items: center</h2>
+<main class="container-alignitems-center">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+</main>
 
-<h1 class="nome-da-propriedade">5- flex-wrap: serve para definir se os elementos irão para linha de baixo/h1>
+<h2 class="valor-da-propriedade">align-items: flex-start</h2>
+<main class="container-alignitems-flex-start">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+</main>
 
-<h2 class="valor-da-propriedade"> flex-wrap: nowrap</h2>
-<main class="flex-wrap-nowrap">
+<h2 class="valor-da-propriedade">align-items: flex-end</h2>
+<main class="container-alignitems-flex-end">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+</main>
+
+<h2 class="valor-da-propriedade">align-items: stretch</h2>
+<main class="container-alignitems-stretch">
+    <div class="bloco-1-sem-altura"> 1 </div>
+    <div class="bloco-2-sem-altura"> 2 </div>
+    <div class="bloco-3-sem-altura"> 3 </div>
+</main>
+
+<h2 class="valor-da-propriedade">align-items: baseline</h2>
+<main class="container-alignitems-baseline">
+    <div class="bloco-1-fontes-diferentes"> 1 </div>
+    <div class="bloco-2-fontes-diferentes"> 2 </div>
+    <div class="bloco-3-fontes-diferentes"> 3 </div>
+</main>
+
+<hr>
+<h1 class="nome-da-propriedade" id="flex-wrap">5-flex-wrap - serve para decidir se os elementos irão para a linha de
+    baixo quando chegar ao final do container ou se eles ficarão espremidos
+</h1>
+<h2 class="valor-da-propriedade">flex-wrap: nowrap</h2>
+<main class="container-flexwrap-nowrap">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
     <div class="bloco-3"> 3 </div>
@@ -160,14 +163,14 @@
     <div class="bloco-3"> 6 </div>
     <div class="bloco-1"> 7 </div>
     <div class="bloco-2"> 8 </div>
-    <div class="bloco-3"> 9 </div>
+    <div class="bloco-3"> 9</div>
     <div class="bloco-1"> 10</div>
-    <div class="bloco-2"> 11</div>
-    <div class="bloco-3"> 12</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
 </main>
 
-    <h2 class="valor-da-propriedade"> flex-wrap: rap</h2>
-<main class="flex-wrap-wrap">
+<h2 class="valor-da-propriedade">flex-wrap: wrap</h2>
+<main class="container-flexwrap-wrap">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
     <div class="bloco-3"> 3 </div>
@@ -176,62 +179,144 @@
     <div class="bloco-3"> 6 </div>
     <div class="bloco-1"> 7 </div>
     <div class="bloco-2"> 8 </div>
-    <div class="bloco-3"> 9 </div>
+    <div class="bloco-3"> 9</div>
     <div class="bloco-1"> 10</div>
-    <div class="bloco-2"> 11</div>
-    <div class="bloco-3"> 12</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
 </main>
 
-<h1 class="nome-da-propriedade">7- align-content>
+<h2 class="valor-da-propriedade">flex-wrap: wrap reverse</h2>
+<main class="container-flexwrap-wrapreverse">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
-    <h2 class="valor-da-propriedade"> align-content</h2>
-    <main class="align-content-center">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-        <div class="bloco-1"> 4 </div>
-        <div class="bloco-2"> 5 </div>
-        <div class="bloco-3"> 6 </div>
-        <div class="bloco-1"> 7 </div>
-        <div class="bloco-2"> 8 </div>
-        <div class="bloco-3"> 9 </div>
-        <div class="bloco-1"> 10</div>
-        <div class="bloco-2"> 11</div>
-        <div class="bloco-3"> 12</div>
-    </main>
+<h1 class="nome-da-propriedade-shorthand" id="flex-flow">6 - flex-flow (SHORTHAND) - atalho para as propriedades
+    flex-direction + flex-wrap
+</h1>
+<h2 class="valor-da-propriedade">flex-wrap: row nowrap</h2>
+<main class="container-flexflow-row-nowrap">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
-    <h2 class="valor-da-propriedade"> align-content-flex-start</h2>
-    <main class="align-content-flex-start">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-        <div class="bloco-1"> 4 </div>
-        <div class="bloco-2"> 5 </div>
-        <div class="bloco-3"> 6 </div>
-        <div class="bloco-1"> 7 </div>
-        <div class="bloco-2"> 8 </div>
-        <div class="bloco-3"> 9 </div>
-        <div class="bloco-1"> 10</div>
-        <div class="bloco-2"> 11</div>
-        <div class="bloco-3"> 12</div>
-    </main>
+<h1 class="nome-da-propriedade" id="align-content">7 - align-content: para quando existe o flex-wrap (ou seja, quebra de
+    linha) e nós queremos alinhar os elementos no eixo perpendicular/secundário
+</h1>
+<h2 class="valor-da-propriedade">align-content: center</h2>
+<main class="container-align-content-center">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
-    <h2 class="valor-da-propriedade"> align-content-flex-end</h2>
-    <main class="align-content-flex-end">
-        <div class="bloco-1"> 1 </div>
-        <div class="bloco-2"> 2 </div>
-        <div class="bloco-3"> 3 </div>
-        <div class="bloco-1"> 4 </div>
-        <div class="bloco-2"> 5 </div>
-        <div class="bloco-3"> 6 </div>
-        <div class="bloco-1"> 7 </div>
-        <div class="bloco-2"> 8 </div>
-        <div class="bloco-3"> 9 </div>
-        <div class="bloco-1"> 10</div>
-        <div class="bloco-2"> 11</div>
-        <div class="bloco-3"> 12</div>
-    </main>
+<h2 class="valor-da-propriedade">align-content: flex-start</h2>
+<main class="container-align-content-flexstart">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
+<h2 class="valor-da-propriedade">align-content: flex-end</h2>
+<main class="container-align-content-flexend">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
+<h2 class="valor-da-propriedade">align-content: space-between</h2>
+<main class="container-align-content-spacebetween">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
 
-</html> 
+<h2 class="valor-da-propriedade">align-content: space-around</h2>
+<main class="container-align-content-spacearound">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
+
+<h2 class="valor-da-propriedade">align-content: space-evenly</h2>
+<main class="container-align-content-spaceevenly">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+    <div class="bloco-1"> 4 </div>
+    <div class="bloco-2"> 5 </div>
+    <div class="bloco-3"> 6 </div>
+    <div class="bloco-1"> 7 </div>
+    <div class="bloco-2"> 8 </div>
+    <div class="bloco-3"> 9</div>
+    <div class="bloco-1"> 10</div>
+    <div class="bloco-2"> 11 </div>
+    <div class="bloco-3"> 12 </div>
+</main>
+
+</html>
